@@ -14,12 +14,15 @@ public class Juego {
         jugador2.mostrarMano();
 
         System.out.println("\nCartas restantes en el mazo: " + mazo.getCantidadCartas());
+        mazo.mostrarMazo();
 
         // Devolvemos una carta del jugador 1 al mazo
         Carta cartaDevuelta = jugador1.devolverCarta(0);
         mazo.agregarCarta(cartaDevuelta);
-        
+
         System.out.println("\nDespués de devolver una carta:");
+
         System.out.println("Cartas restantes en el mazo: " + mazo.getCantidadCartas());
+        mazo.mostrarMazo();
     }
 }
