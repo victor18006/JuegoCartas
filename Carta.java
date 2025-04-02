@@ -19,5 +19,6 @@ public class Carta {
     public String toString() {
         String[] valores = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         return "[" + valores[valor - 1] + " de " + palo + "]";
+        /*return "\n" + valores[valor - 1] + "\n\n" + palo;*/
     }
 }
